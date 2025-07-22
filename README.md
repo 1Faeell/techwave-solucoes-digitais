@@ -6,7 +6,9 @@ O projeto tem como foco destacar os principais serviços oferecidos, reforçar a
 ## 📸 Demonstração
 <img width="800" height="600" alt="techwave-image" src="https://github.com/user-attachments/assets/29b6c731-e7d9-4c25-a9ec-29dacb5dc718" />
 
-
+### Visualizar Projeto
+Você pode visualizar o projeto clicando aqui:
+https://1faeell.github.io./techwave-solucoes-digitais/
 
 ---
 
@@ -37,10 +39,4 @@ Apresentar de forma profissional e visualmente atraente os seguintes pontos:
 ✔️ Animações sutis para melhorar a experiência visual  
 ✔️ Estrutura clara e moderna com foco em conversão  
 ✔️ Ícones sociais interativos no rodapé  
-
----
-
-## 🖥️ Preview
-
-Você pode visualizar o projeto clicando aqui:  
 
