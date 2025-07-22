@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* =========  Navbar =========  */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: 0.4s;
+}
+
+.navbar:hover {
+  background-color: #ffffffee;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+/* =========  HERO =========  */
+.hero {
+  background: linear-gradient(
+      rgba(13, 109, 253, 0.884),
+      rgba(13, 109, 253, 0.671)
+    ),
+    url("../images/tech.jpg") center/cover no-repeat;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hero a {
+  background-color: #ffffff;
+  transition: 0.3s;
+  padding: 1rem 2.2rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  width: 300px;
+  border-radius: 30px;
+  color: #0d6efd;
+}
+
+.hero a:hover {
+  background-color: #ececec;
+  transform: translateY(-3px);
+}
+
+/* =========  Seções Gerais =========  */
+section {
+  overflow-x: hidden;
+  padding: 7rem 0;
+}
+
+/* =========  Soluções =========  */
+.features {
+  background: linear-gradient(#ffffff, #ececec);
+}
+
+.features .card {
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.4s all ease-in-out;
+  border-radius: 16px;
+}
+
+.features .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.features .card h5 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.features .card p {
+  font-size: 1.3rem;
+}
+
+.features .card i {
+  transition: 0.4s all ease;
+}
+.features .card:hover i {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* =========  SOBRE NÓS =========  */
+#sobre {
+  background-color: #ffffff;
+  position: relative;
+  border-top: 2px solid #78aeff;
+  border-bottom: 2px solid #78aeff;
+}
+
+#sobre h2 {
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+#sobre #paragrafo-sobre {
+  color: #555;
+  line-height: 1.8;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+#sobre #cards-sobre {
+  font-size: 1.2rem;
+}
+
+#sobre .about-card {
+  transition: 0.4s all ease;
+}
+#sobre .about-card:hover {
+  transform: translateY(-10px);
+}
+
+/* =========  Efeito visual no Sobre =========  */
+#sobre .container {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========  Depoimentos =========  */
+#depoimentos {
+  background: linear-gradient(
+      rgba(13, 109, 253, 0.705),
+      rgba(13, 109, 253, 0.705)
+    ),
+    url("../images/depoimento.jpg") center/cover no-repeat;
+}
+
+#depoimentos h2 {
+  color: #ffffff;
+}
+
+#depoimentos .card {
+  border-radius: 16px;
+  border: 2px solid #b9b9b9;
+  transition: 0.4s all ease-in-out;
+}
+
+#depoimentos .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+#depoimentos img {
+  border: 2px solid #0d6efd;
+  transition: 0.3s;
+}
+
+#depoimentos img:hover {
+  transform: rotate(-3deg) scale(1.05);
+}
+
+/* =========  Contato =========  */
+#contato form .form-control {
+  border-radius: 8px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+#contato form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+#contato button {
+  padding: 12px 0;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+#contato button:hover {
+  background-color: #0049d8;
+  transform: translateY(-2px);
+}
+
+/* =========  Rodapé =========  */
+footer {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+footer .icones-sociais a:hover {
+  transform: translateY(-3px) scale(1.1);
+  opacity: 0.9;
+}
+
+/* =========  Responsividade =========  */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 80px 0;
+    height: 100vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+
+  #sobre p {
+    font-size: 1.2rem;
+  }
+
+  .features .card {
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero a {
+    width: 250px;
+  }
+}
